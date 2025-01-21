@@ -1,0 +1,86 @@
+/* Box Model Gallery */
+#box-model-gallery {
+    margin-top: 20px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .box {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #f0f0f0;
+  }
+.small {
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .medium {
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  .large {
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+  }
+  /* Positioning Demo Section */
+#positioning-demo {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .static-box {
+    position: static; /* Default positioning */
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    background-color: #e0f7fa;
+    border: 1px solid #00796b;
+  }
+  
+  .relative-box {
+    position: relative;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    background-color: #e8f5e9;
+    border: 1px solid hsl(344, 62%, 68%);
+    top: 20px; /* Moved 20px down relative to its normal position */
+    left: 20px; /* Moved 20px right relative to its normal position */
+  }
+  
+  .absolute-box {
+    position: absolute;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    background-color: #fbe9e7;
+    border: 1px solid #d84315;
+    top: 50px; /* Positioned relative to the nearest positioned ancestor */
+    right: 20px;
+  }
+  
+  .fixed-box {
+    position: fixed;
+    padding: 10px;
+    width: 200px;
+    background-color: #ede7f6;
+    border: 1px solid #512da8;
+    bottom: 10px; /* Always fixed to the bottom of the viewport */
+    right: 10px;
+    text-align: center;
+  }
+  
